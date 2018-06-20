@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BreedingMenu"
+    tools:showIn="@layout/activity_breeding_menu">
+
+    <Spinner
+        android:id="@+id/spinnerBreeding1"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="@drawable/spinner_border"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"/>
+
+    <Spinner
+        android:id="@+id/spinnerBreeding2"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/spinner_border"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/textBreeding1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="120dp"
+        android:textColor="#000000"
+        android:text="Your dog's age" />
+
+    <TextView
+        android:id="@+id/textBreeding2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:text="Your dog's breed" />
+
+    <Spinner
+        android:id="@+id/spinnerBreeding3"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@drawable/spinner_border"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="250dp" />
+
+    <TextView
+        android:id="@+id/textBreeding3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="220dp"
+        android:textColor="#000000"
+        android:text="Your preferred dog" />
+
+    <Button
+        android:id="@+id/buttonBreeding"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="120dp"
+        android:background="@color/colorAccent"
+        android:textColor="#FFFFFF"
+        android:text="Submit" />
+
+</RelativeLayout>
